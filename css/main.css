@@ -1,39 +1,160 @@
-/* css/main.css */
+/* css/main.css - いちご農園テーマ */
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: #f8f9fa;
-    color: #333;
+    background: linear-gradient(135deg, #ffe8e8 0%, #fff0f0 100%);
+    color: #2d4a3e;
   }
 
   header {
-    background: #0070f3;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
     color: #fff;
     padding: 2rem 1rem;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
 
   h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 700;
+  }
+
+  nav {
+    margin-top: 1rem;
+    padding: 1rem 0;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+  }
+
+  nav a:hover {
+    background: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
   }
 
   main {
-    max-width: 720px;
+    max-width: 800px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    color: #c0392b;
+    border-bottom: 3px solid #e74c3c;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    background: #fafafa;
+    border-radius: 10px;
+    border-left: 5px solid #e74c3c;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    background: #fff;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-left: 4px solid #27ae60;
+  }
+
+  strong {
+    color: #c0392b;
+    font-weight: 600;
   }
 
   .note {
-    color: #555;
+    color: #7f8c8d;
     font-size: 0.9rem;
+    font-style: italic;
+    background: #ecf0f1;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+    margin-top: 1rem;
+  }
+
+  /* フォームスタイル */
+  form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin: 2rem 0;
+  }
+
+  label {
+    display: block;
+    margin: 1rem 0 0.5rem 0;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ecf0f1;
+    border-radius: 8px;
+    font-family: inherit;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+  }
+
+  button {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+  }
+
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
   }
 
   footer {
-    background: #eee;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: #ecf0f1;
     text-align: center;
-    padding: 1rem;
-    font-size: 0.8rem;
+    padding: 2rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
   }
+

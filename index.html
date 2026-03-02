@@ -2,76 +2,112 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>WOVN 検証用デモサイト Index</title>
+  <title>いちご農園 haruka's FARM</title>
   <link rel="stylesheet" href="css/main.css">
-  <!-- ↓ YOUR WOVN TOKEN KEY -->
+  <!-- YOUR WOVN SCRIPT -->
 </head>
 <body>
   <header>
-    <h1>WOVN 検証用デモサイト</h1>
-    <p class="note">各機能ごとのサンプルページ一覧</p>
+    <h1>いちご農園 haruka's FARM</h1>
+    <nav>
+      <a href="index.html">ホーム</a> / 
+      <a href="about.html">農園について</a> / 
+      <a href="contents/content1.html">いちごの品種</a> / 
+      <a href="contents/content2.html">いちご狩り</a> / 
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
   </header>
 
+  <!-- メインビジュアル -->
+  <div style="position: relative; text-align: center; margin-bottom: 3rem;">
+    <img src="img/main.jpg" alt="新鮮ないちご" style="width: 100%; max-width: 800px; height: 400px; object-fit: cover; border-radius: 15px; margin: 0 auto; display: block; box-shadow: 0 8px 32px rgba(0,0,0,0.2);">
+    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0,0,0,0.6); color: white; padding: 2rem; border-radius: 10px; text-align: center;">
+      <h2 style="margin: 0; font-size: 2.5rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">甘くて新鮮な</h2>
+      <h2 style="margin: 0.5rem 0; font-size: 3rem; color: #ff6b6b; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">朝摘みいちご</h2>
+      <p style="margin: 1rem 0 0 0; font-size: 1.2rem;">有機栽培で育てた安心・安全ないちごをお届け</p>
+    </div>
+  </div>
+
   <main>
-    <!-- ワイルドカード用語 -->
-    <section>
-      <h2>ワイルドカード用語</h2>
-      <ul>
-        <li><a href="wildcard.html">wildcard.html</a>（用語集・テキスト・数字タイプ＋複数バリュー）</li>
-      </ul>
+    <!-- キャッチコピー -->
+    <section style="text-align: center; margin-bottom: 3rem;">
+      <h2 style="font-size: 2.2rem; color: #c0392b; margin-bottom: 1rem;">haruka's FARMへようこそ</h2>
+      <p style="font-size: 1.3rem; line-height: 1.8; color: #2d4a3e; max-width: 600px; margin: 0 auto;">
+        1995年創業、30年の歴史を持つ老舗いちご農園。<br>
+        東京都優良農産物認証・有機JAS認証取得の高品質いちごを<br>
+        <strong style="color: #e74c3c;">朝摘み新鮮</strong>でお届けします。
+      </p>
     </section>
 
-    <!-- ワイルドカード URL 集約 -->
-    <section>
-      <h2>ワイルドカード URL 集約</h2>
-      <ul>
-        <li><a href="/wovn-test/wildcard-url/test01.html">test01.html</a></li>
-        <li><a href="/wovn-test/wildcard-url/test02.html">test02.html</a></li>
-      </ul>
+    <!-- 3つの特徴（カード形式） -->
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
+      <div style="background: linear-gradient(135deg, #ff6b6b, #ee5a5a); color: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 6px 20px rgba(238, 90, 90, 0.3);">
+        <h3 style="margin: 0 0 1rem 0; font-size: 1.5rem;">🍓 4品種のいちご</h3>
+        <p style="margin: 0;">とちおとめ・あまおう・章姫・紅ほっぺの厳選4品種を栽培</p>
+      </div>
+      <div style="background: linear-gradient(135deg, #27ae60, #2ecc71); color: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 6px 20px rgba(46, 204, 113, 0.3);">
+        <h3 style="margin: 0 0 1rem 0; font-size: 1.5rem;">🌱 有機栽培</h3>
+        <p style="margin: 0;">化学農薬・化学肥料不使用の安心・安全ないちご作り</p>
+      </div>
     </section>
 
-    <!-- 画像／リンク置換 -->
-    <section>
-      <h2>画像／リンク置換</h2>
-      <ul>
-        <li><a href="replacement.html">replacement.html</a>（日本語⇔英語で画像＆PDF置換）</li>
-      </ul>
+    <!-- いちご狩り体験（目立つセクション） -->
+    <section style="background: linear-gradient(135deg, #ffe8e8, #fff0f0); padding: 3rem 2rem; border-radius: 20px; text-align: center; margin-bottom: 3rem; border: 3px solid #ff6b6b;">
+      <h2 style="color: #c0392b; font-size: 2.5rem; margin-bottom: 1.5rem;">🍓 いちご狩り体験 🍓</h2>
+      <p style="font-size: 1.4rem; margin-bottom: 2rem; color: #2d4a3e;">
+        <strong>1月上旬〜5月下旬</strong> 毎日開催中！<br>
+        <span style="color: #e74c3c; font-size: 1.6rem; font-weight: bold;">30分食べ放題</span>
+      </p>
+      <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem;">
+        <div style="background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <div style="font-size: 1.3rem; font-weight: bold; color: #c0392b;">大人</div>
+          <div style="font-size: 2rem; color: #e74c3c; font-weight: bold;">¥2,000</div>
+          <div style="color: #7f8c8d;">中学生以上</div>
+        </div>
+        <div style="background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <div style="font-size: 1.3rem; font-weight: bold; color: #c0392b;">小学生</div>
+          <div style="font-size: 2rem; color: #e74c3c; font-weight: bold;">¥1,500</div>
+          <div style="color: #7f8c8d;">小学1年〜6年</div>
+        </div>
+        <div style="background: white; padding: 1.5rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+          <div style="font-size: 1.3rem; font-weight: bold; color: #c0392b;">幼児</div>
+          <div style="font-size: 2rem; color: #e74c3c; font-weight: bold;">¥1,000</div>
+          <div style="color: #7f8c8d;">3歳以上</div>
+        </div>
+      </div>
+      <p style="background: #fff; padding: 1rem; border-radius: 10px; display: inline-block; margin-bottom: 1.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        📞 <strong>完全予約制</strong> お電話またはお問い合わせフォームから<br>
+        <span style="color: #e74c3c; font-size: 1.2rem; font-weight: bold;">TEL: 0120-123-456</span>
+      </p>
+      <div>
+        <a href="contents/content2.html" style="background: linear-gradient(135deg, #e74c3c, #c0392b); color: white; text-decoration: none; padding: 1rem 2.5rem; border-radius: 30px; font-size: 1.2rem; font-weight: bold; display: inline-block; transition: transform 0.3s ease, box-shadow 0.3s ease;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 8px 25px rgba(231, 76, 60, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(231, 76, 60, 0.3)'">
+          詳しい情報・ご予約はこちら →
+        </a>
+      </div>
     </section>
 
-    <!-- 動的コンテンツ -->
-    <section>
-      <h2>動的コンテンツ</h2>
-      <ul>
-        <li><a href="dynamic.html">dynamic.html</a>（JavaScript で遅延挿入されるテキスト）</li>
-      </ul>
+    <!-- クイックリンク -->
+    <section style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+      <a href="contents/content1.html" style="text-decoration: none; background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="font-size: 2rem; margin-bottom: 1rem;">🍓</div>
+        <div style="color: #c0392b; font-weight: bold; font-size: 1.2rem; margin-bottom: 0.5rem;">いちごの品種</div>
+        <div style="color: #7f8c8d; font-size: 0.9rem;">4品種の詳細情報・写真</div>
+      </a>
+      <a href="about.html" style="text-decoration: none; background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="font-size: 2rem; margin-bottom: 1rem;">🏆</div>
+        <div style="color: #c0392b; font-weight: bold; font-size: 1.2rem; margin-bottom: 0.5rem;">農園について</div>
+        <div style="color: #7f8c8d; font-size: 0.9rem;">歴史・こだわり・受賞歴</div>
+      </a>
+      <a href="contact.html" style="text-decoration: none; background: white; padding: 2rem; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+        <div style="font-size: 2rem; margin-bottom: 1rem;">📞</div>
+        <div style="color: #c0392b; font-weight: bold; font-size: 1.2rem; margin-bottom: 0.5rem;">お問い合わせ</div>
+        <div style="color: #7f8c8d; font-size: 0.9rem;">ご予約・お問い合わせ</div>
+      </a>
     </section>
-
-    <!-- タグ種別テスト -->
-    <section>
-      <h2>タグ種別テスト</h2>
-      <ul>
-        <li><a href="tags.html">tags.html</a>（ブロックタグ／インラインタグの抽出確認）</li>
-      </ul>
-    </section>
-
-    <!-- 抽出無視ルール -->
-    <section>
-      <h2>抽出無視ルール</h2>
-      <ul>
-        <li><a href="ignore.html">ignore.html</a>（data-wovn-ignore / wovn-ignore クラス）</li>
-      </ul>
-    </section>
-
-    <!-- フォーム入力デモ -->
-    <section>
-      <h2>フォーム入力デモ</h2>
-      <ul>
-        <li><a href="form.html">form.html</a>（各種 input 要素の表示と確認画面）</li>
-      </ul>
-    </section>
-    
   </main>
 
-  <footer><small>&copy; 2025 My WebSV</small></footer>
+  <footer>
+    <small>&copy; 2025 いちご農園 haruka's FARM</small>
+  </footer>
 </body>
 </html>
