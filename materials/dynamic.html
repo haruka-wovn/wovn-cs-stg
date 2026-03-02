@@ -75,26 +75,6 @@
   <header>
     <h1>動的コンテンツテスト</h1>
 
-    <!-- ハンバーガー -->
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span>
-    </div>
-
-    <!-- ナビゲーション -->
-    <nav>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="wildcard.html">Wildcard</a></li>
-        <li><a href="replacement.html">Image/Link</a></li>
-        <li><a href="dynamic.html">Dynamic</a></li>
-        <li><a href="tags.html">Tags</a></li>
-        <li><a href="ignore.html">Ignore</a></li>
-        <li><a href="form.html">Form</a></li>
-        <li><a href="contact.html">Form</a></li>
-      </ul>
-    </nav>
-  </header>
-
   <main>
     <h2>クリックでモーダル表示</h2>
     <button id="openModal">モーダルを開く</button>
@@ -103,29 +83,45 @@
   <footer><small>&copy; 2025 My WebSV</small></footer>
 
   <!-- モーダル -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <p>これはモーダル内のコンテンツです。翻訳対象になるか確認してください。</p>
-      <button class="modal-close" id="closeModal">閉じる</button>
-    </div>
+  <div class="modal-content">
+    <p>これはモーダル内のコンテンツです。翻訳対象になるか確認してください。</p>
+    <p>受付番号：<span id="modalRandom"></span></p>
+    <p>日時：<span id="modalDatetime"></span></p>
+    <button class="modal-close" id="closeModal">閉じる</button>
   </div>
 
   <script>
     // モーダル制御
     const modal = document.getElementById('modal');
+
     document.getElementById('openModal').onclick = () => {
       modal.style.display = 'block';
+
+      // ランダム文字列（英数字8文字）
+      const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      let random = '';
+      for (let i = 0; i < 8; i++) {
+        random += chars.charAt(Math.floor(Math.random() * chars.length));
+      }
+      document.getElementById('modalRandom').textContent = random;
+
+      // 現在の日付・時間
+      const now = new Date();
+      const datetime = now.getFullYear() + '/' +
+        String(now.getMonth() + 1).padStart(2, '0') + '/' +
+        String(now.getDate()).padStart(2, '0') + ' ' +
+        String(now.getHours()).padStart(2, '0') + ':' +
+        String(now.getMinutes()).padStart(2, '0') + ':' +
+        String(now.getSeconds()).padStart(2, '0');
+      document.getElementById('modalDatetime').textContent = datetime;
     };
+
     document.getElementById('closeModal').onclick = () => {
       modal.style.display = 'none';
     };
+
     window.onclick = (e) => {
       if (e.target === modal) modal.style.display = 'none';
-    };
-
-    // ハンバーガー制御
-    document.getElementById('hamburger').onclick = () => {
-      document.getElementById('navLinks').classList.toggle('active');
     };
   </script>
 </body>
