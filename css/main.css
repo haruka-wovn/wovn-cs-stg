@@ -60,6 +60,12 @@ body {
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
   }
+  
+  h3 {
+    color: #c0392b;
+    font-size: 1.3rem;
+    margin: 0;
+  }
 
   section {
     margin-bottom: 2.5rem;
@@ -97,6 +103,214 @@ body {
     border-radius: 8px;
     border-left: 4px solid #3498db;
     margin-top: 1rem;
+  }
+
+  /* トップページ */
+  .kv-block {
+    position: relative;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .kv-image {
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  }
+
+  .kv-text-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .kv-text-wrap__title {
+    margin: 0;
+    border-bottom: 0px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    font-size: 2.5rem;
+    span {
+      display: block;
+      margin-top: 0.5rem;
+      padding-block: 0.5rem;
+      border-top: 3px solid #e74c3c;
+      border-bottom: 3px solid #e74c3c;
+      font-size: 3rem;
+      color: #ff6b6b;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+  }
+
+  .kv-text-wrap__desc {
+    margin: 1rem 0 0 0;
+    font-size: 1.2rem;
+  }
+
+  .top-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .top-section.picking {
+    background: linear-gradient(135deg, #ffe8e8, #fff0f0);
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    border: 3px solid #ff6b6b;
+  }
+
+  .top-section-desc {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #2d4a3e;
+  }
+
+  .top-section-title {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+  }
+
+  .picking-desc {
+    font-size: 1.4rem;
+    margin-bottom:
+    2rem; color: #2d4a3e;
+    span {
+      color: #e74c3c;
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  }
+
+  .picking-card-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .picking-card {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .picking-card__title {
+    span {
+      display: block;
+      color: #e74c3c;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+  }
+
+  .picking-card__desc {
+    margin: 0;
+    color: #7f8c8d;
+  }
+
+  .picking-reservation {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    display:inline-block;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    span {
+      color: #e74c3c;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+
+  .picking-reservation__text {
+    margin: 0;
+  }
+
+  .picking-button {
+    /* ほんとはimportant使いたくないけど許して */
+    display: inline-block;
+    border-radius: 30px !important;
+    padding: 1rem 2.5rem !important;
+    font-size: 1.2rem !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .feature-card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .feature-card {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a5a);
+    color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 20px rgba(238, 90, 90, 0.3);
+  }
+  
+  .feature-card.green {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+  }
+
+  .feature-card__title {
+    color: #fff;
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  .feature-card__desc {
+    margin: 0;
+  }
+
+  .info-card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .info-card {
+    text-decoration: none;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px; 
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .info-card:hover {
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .info-card__icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .info-card__title {
+    color: #c0392b;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-card__desc {
+    color: #7f8c8d;
+    font-size: 0.9rem;
   }
 
   /* フォームスタイル */
@@ -138,7 +352,8 @@ body {
     text-decoration: none;
   }
 
-  button:hover {
+  button:hover,
+  a:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
   }
